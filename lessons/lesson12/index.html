@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3::before{
+            content: attr(title) ;
+            color: red;
+        }
+        h3::after{
+            content: " -------- ";
+            color: red;
+        }
+        a::before{
+            content: attr(href);
+        }
+
+        ul{
+            counter-reset: car 10;
+        }
+
+        li::before{
+            counter-increment: car;
+            content: 'Car 'counter(car) ':';
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+        <li>Bmw</li>
+        <li>Mers</li>
+        <li>Audi</li>
+    </ul>
+
+    <ul>
+        <li>tttt</li>
+        <li>tttt</li>
+        <li>tttt</li>
+        <li>tttt</li>
+
+    </ul>
+
+
+
+    <h1>Hello</h1>
+    
+    <a href="https://www.onliner.by/"></a>
+
+    <h3 title="Hello"> text </h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde earum vel labore obcaecati velit dolores cumque ducimus itaque quidem repudiandae eius dignissimos ipsum quod iste aliquam et nulla, suscipit quia.</p>
+    
+
+    <h3>text</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde earum vel labore obcaecati velit dolores cumque ducimus itaque quidem repudiandae eius dignissimos ipsum quod iste aliquam et nulla, suscipit quia.</p>
+    
+
+    <h3>text</h3>
+    <h3>text</h3>
+    <h3>text</h3>
+    <h3>text</h3>
+    <h3>text</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde earum vel labore obcaecati velit dolores cumque ducimus itaque quidem repudiandae eius dignissimos ipsum quod iste aliquam et nulla, suscipit quia.</p>
+    
+</body>
+</html>

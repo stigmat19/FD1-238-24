@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            background-color: aqua;
+            position: relative;
+        }
+
+        .menu {
+            float: left;
+            background-color: blue;
+        }
+
+        .banner {
+            float: right;
+            background-color: blueviolet;
+        }
+
+        .menu,
+        .banner {
+            width: 200px;
+            height: 200px;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: brown;
+        }
+
+        .content {
+            background-color: rgb(2, 165, 21);
+        }
+
+        .clear {
+            height: 10px;
+            background-color: black;
+            clear: both;
+        }
+
+        .clearfix::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        a[href^='http://'] {
+            color: red;
+        }
+
+        a[href^='https://'] {
+            color: red;
+        }
+
+        @media screen and (max-width: 1250px) {
+            .menu {
+                width: 50%;
+            }
+            .banner{
+                width: 50%;
+            }
+            .content{
+                clear: both;
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menu {
+                float: none;
+                width: auto;
+            }
+            .banner{
+                display: none;
+            }
+            .content{
+                height: 300px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="wrap clearfix">
+        <div class="menu"> menu</div>
+        <div class="banner">banner</div>
+        <div class="content">content</div>
+    </div>
+    <div class="footer">
+        <h1>hello</h1>
+    </div>
+
+
+</body>
+
+</html>

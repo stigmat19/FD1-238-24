@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Brushstroke Plain';
+    src: url('BrushstrokePlain.eot');
+    src: url('BrushstrokePlain.eot?#iefix') format('embedded-opentype'),
+        url('BrushstrokePlain.woff2') format('woff2'),
+        url('BrushstrokePlain.woff') format('woff'),
+        url('BrushstrokePlain.ttf') format('truetype'),
+        url('BrushstrokePlain.svg#BrushstrokePlain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

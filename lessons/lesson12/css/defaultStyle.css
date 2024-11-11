@@ -1,0 +1,10 @@
+@import 'initStyle.css';
+
+.container{
+    width: 1200px;
+    height: 300px;
+    background-color: blueviolet;
+    margin: 0 auto;
+}
+
+

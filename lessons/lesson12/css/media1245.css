@@ -1,0 +1,6 @@
+@media all and (max-width: 1245px) {
+    .container{
+        width: 900px;
+        background-color: rgb(247, 246, 169);
+    }
+}

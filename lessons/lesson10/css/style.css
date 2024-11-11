@@ -1,0 +1,38 @@
+body{
+    height: 10000px;
+}
+/* a[href^='http'] {
+    color: red;
+}
+
+a[href^='https'] {
+    color: green;
+} */
+[href*='onliner']{
+    font-weight: 900;
+}
+
+div span{
+    font-style: italic;
+}
+p:first-of-type{
+    background-color: brown;
+}
+a{
+    transition: .5s;
+}
+a:hover{
+    background-color: aqua;
+}
+a:active{
+    font-style: italic;
+}
+a:focus{
+    font-weight: 900;
+}
+a:visited{
+    color: blue;
+}
+a:link{
+    color: violet;
+}
