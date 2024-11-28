@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" target="_blank" method="post">
+        <fieldset>
+            <legend>Hello</legend>
+            <label>
+                firstname1: <input type="text" name="firstname" placeholder="Firstname" maxlength="5" value="Ivan">
+            </label>  <br><br>
+            lastname1: <input type="text"  name="lastname"><br><br>
+            pass: <input type="password" id="pass" name="password"><br><br>
+        </fieldset>
+
+        <hr>
+        cat <input type="checkbox" name="animal[]" value="cat"><br>
+        dog <input type="checkbox" name="animal[]"  checked value="dog"><br>
+        parrot <input type="checkbox" name="animal[]" value="parrot"><br>
+        <hr>
+        <label for="pass">test</label>
+        <hr>
+        man <input type="radio" name="gender" value="man"><br>
+        woman <input type="radio" name="gender"  checked value="woman"><br><br>
+
+        man <input type="radio" name="gender1" value="man"><br>
+        woman <input type="radio" name="gender1"  checked value="woman"><br>
+        <hr> 
+        <textarea name="textarea" cols="30" rows="10">Hello</textarea>
+        <hr>
+            <select name="city[]" size="3" multiple>
+                <optgroup label="group1">
+                    <option value="Minsk">Minsk</option>
+                    <option value="Brest" disabled>Brest</option>
+                    <option value="Zhodino">Zhodino</option>
+                </optgroup>
+                <optgroup label="group2">
+                    <option value="Minsk2">Minsk2</option>
+                    <option value="Brest2">Brest2</option>
+                    <option value="Zhodino2">Zhodino2</option>
+                </optgroup>
+            </select>
+        <hr>
+        <input type="file" name="file">
+        <input type="hidden" name="formType" value="form1">
+        <input type="submit" value="send">
+        
+    </form>
+    
+
+
+
+</body>
+</html>
