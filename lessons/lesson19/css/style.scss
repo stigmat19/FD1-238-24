@@ -1,0 +1,10 @@
+@import "var.scss";
+
+h1{
+    color: $red;
+}
+.a{
+    & > span{
+        color: $red;
+    }
+}
